@@ -1,0 +1,143 @@
+.footer {
+  display: flex;
+  background-color: #2f303a;
+  color: var(--primary-white-color);
+  height: 252px;
+  padding: 60px 0 60px 0;
+}
+.footer-content {
+  display: inline-flex;
+}
+.footer__container {
+  flex-basis: calc((50%-45px) / 2);
+}
+.footer__logo--color {
+  color: var(--primary-white-color);
+  text-decoration: none;
+}
+
+.footer-address {
+  margin-top: 20px;
+}
+.footer-address__contact {
+  margin-bottom: 9px;
+  font-style: normal;
+}
+
+.footer-address__link {
+  color: var(--primary-text-color);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+  margin-bottom: 9px;
+  transition: var(--animation);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}
+
+.footer-social {
+  display: inline-block;
+  flex-basis: calc((50% - 45px) / 2);
+  margin-left: 70px;
+}
+.footer-social__title {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+
+.footer-social__list {
+  display: flex;
+  padding-bottom: 30px;
+}
+.footer-social__item:not(:last-child) {
+  margin-right: 10px;
+}
+.footer-social__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  transition: var(--animation);
+
+  &:hover {
+    background-color: var(--accent-color);
+  }
+}
+
+.footer-social__icon {
+  width: 20px;
+  height: 20px;
+  fill: #ffffff;
+}
+
+.footer-form {
+  margin-left: 93px;
+}
+.footer-form__title {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+.form {
+  display: flex;
+}
+
+.footer-form__button {
+  width: 200px;
+  height: 50px;
+  padding: 10px 28px 10px 29px;
+  margin-left: 12px;
+  background: #2196f3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  cursor: pointer;
+}
+.footer-form__text-button {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.9;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: #ffffff;
+}
+
+.footer-form__maill {
+  width: 358px;
+  height: 50px;
+  padding-bottom: 15px;
+  padding-top: 15px;
+  padding-left: 16px;
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-sizing: border-box;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  font-size: 16px;
+  line-height: 1.25;
+  color: rgba(255, 255, 255, 0.6);
+}
+.footer-form__icon {
+  width: 24px;
+  height: 24px;
+  margin-left: 10px;
+  fill: var(--primary-white-color);
+}

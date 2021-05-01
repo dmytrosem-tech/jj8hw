@@ -1,0 +1,135 @@
+.page-header {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 20px 0;
+  height: 80px;
+  border-bottom: 1px solid #ececec;
+  position: relative;
+}
+.site-nav {
+  display: flex;
+  margin-left: 93px;
+}
+
+.logo {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.19;
+  color: var(--accent-color);
+}
+.logo--color {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.19px;
+  color: black;
+}
+.nav-menu {
+  margin-left: 93px;
+  margin-right: 275px;
+  margin-top: 32px;
+}
+.site-nav {
+  display: flex;
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  margin: 0;
+}
+.site-nav__item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.site-nav__link {
+  color: var(--title-text-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  transition: var(--animation);
+
+  &:hover,
+  :focus {
+    color: var(--accent-color);
+  }
+}
+.site-nav__current {
+  color: var(--accent-color);
+}
+
+.site-nav__current {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: var(--accent-color);
+  height: 100%;
+  position: relative;
+}
+
+.site-nav__current::after {
+  content: '';
+  height: 4px;
+  border-radius: 2px;
+  background-color: var(--accent-color);
+  color: var(--accent-color);
+  margin-top: 28px;
+  width: 100%;
+  display: block;
+}
+
+.nav {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+}
+
+.address {
+  display: flex;
+  margin-left: 0;
+}
+.address__item {
+  padding-top: 7px;
+  padding-bottom: 7px;
+  color: var(--secondary-text);
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+.address__item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.address__item:first-child {
+  padding-left: 0;
+}
+.address__link {
+  display: flex;
+  align-items: center;
+  padding-top: 7px;
+  padding-bottom: 7px;
+
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--primary-text-color);
+  transition: var(--animation);
+
+  & :focus,
+  &:hover {
+    color: var(--accent-color);
+  }
+}
+.address__icon {
+  margin-right: 10px;
+  fill: #afb1b8;
+  transition: var(--animation);
+}
+
+.address__link:hover .address__icon,
+.address__link:focus .address__icon {
+  fill: var(--accent-color);
+}
