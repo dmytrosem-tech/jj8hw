@@ -10,14 +10,15 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap" />
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/0.2.0/modern-normalize.min.css"/>
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/0.2.0/modern-normalize.min.css"
+    />
     <link rel="stylesheet" href="./css/styles.min.css" />
   </head>
   <body>
     <!--Шапка-->
     <header class="page-header">
       <div class="container nav">
-        <a href=""><span class="logo">Web</span><span class="logo--color">Studio</span></a>
+        <a href="" class="page-header__logo"><span class="logo">Web</span><span class="logo--color">Studio</span></a>
         <nav class="nav-menu">
           <ul class="site-nav list">
             <li class="site-nav__item"><a class="site-nav__link" href="./index.html">Студия</a></li>
@@ -47,7 +48,7 @@
     </header>
     <!--Главная-->
     <main>
-      <section class="section projects">
+      <section class="projects">
         <div class="container">
           <h1 class="visually-hidden">Проекты</h1>
 
@@ -71,7 +72,20 @@
             <li class="projects__item">
               <a href="" class="projects__link link">
                 <div class="projects__thumb">
-                  <img src="./images/portfolio/img1.jpg" alt="фото на мониторе" class="project-img" width="370" />
+                  <picture>
+                    <source
+                      srcset="./images/portfolio/desktop/portfoliolink1desktop.jpg 1x"
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/mobile/portfoliolink1mobile.jpg    1x,
+                        ./images/portfolio/mobile/portfoliolink1mobile@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <img src="./images/portfolio/img1.jpg" alt="фото на мониторе" class="project-img" width="370" />
+                  </picture>
                   <p class="project__overlay">
                     Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу
                     для цифрового шпионажа и атак на защищённые сервера конкурентов.

@@ -1,11 +1,5 @@
 .page-header {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  padding: 20px 0;
-  height: 80px;
   border-bottom: 1px solid #ececec;
-  position: relative;
 }
 .site-nav {
   display: flex;
@@ -30,7 +24,7 @@
 }
 .nav-menu {
   margin-left: 93px;
-  margin-right: 275px;
+  margin-right: auto;
   margin-top: 32px;
 }
 .site-nav {
@@ -83,7 +77,7 @@
 
 .nav {
   display: flex;
-  flex-direction: row;
+
   align-items: baseline;
 }
 
@@ -92,8 +86,6 @@
   margin-left: 0;
 }
 .address__item {
-  padding-top: 7px;
-  padding-bottom: 7px;
   color: var(--secondary-text);
   font-weight: 500;
   line-height: 1.14;
@@ -109,9 +101,6 @@
 .address__link {
   display: flex;
   align-items: center;
-  padding-top: 7px;
-  padding-bottom: 7px;
-
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
@@ -132,4 +121,29 @@
 .address__link:hover .address__icon,
 .address__link:focus .address__icon {
   fill: var(--accent-color);
+}
+.address {
+  @media (min-width: 768px) and (max-width: 1200px) {
+    display: block;
+  }
+}
+@media screen and (max-width: 767.98px) {
+  .address {
+    display: none;
+  }
+}
+@media screen and (max-width: 767.98px) {
+  .nav-menu {
+    display: none;
+  }
+}
+.address__item {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    margin-bottom: 10px;
+    margin-left: 30px;
+  }
+}
+.page-header__logo {
+  margin-top: 24px;
+  margin-bottom: 25px;
 }
