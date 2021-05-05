@@ -70,7 +70,6 @@
 
 .team__item {
   flex-basis: 100%;
-
   @media screen and (min-width: 768px) {
     flex-basis: calc((100% - 30px) / 2);
     margin-right: 30px;
@@ -98,4 +97,7 @@
   .team__item:nth-last-child(-n + 4) {
     margin-bottom: 0;
   }
+}
+.team__img {
+  width: 100%;
 }
