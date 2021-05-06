@@ -841,6 +841,7 @@ h3 {
 .team {
   background-color: #f5f4fa;
   padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .team__title {
@@ -964,6 +965,12 @@ h3 {
   padding-bottom: 94px;
 }
 
+@media screen and (max-width: 767px) {
+  .clients {
+    padding-top: 0;
+  }
+}
+
 .clients__title {
   margin-bottom: 50px;
   font-weight: 700;
@@ -971,6 +978,7 @@ h3 {
   line-height: 42px;
   text-align: center;
   letter-spacing: 0.03em;
+  margin-bottom: 0;
 }
 
 @media screen and (max-width: 767px) {
@@ -993,7 +1001,6 @@ h3 {
 
 @media (min-width: 1200px) {
   .clients__title {
-    padding-top: 86px;
     padding-bottom: 50px;
     font-size: 36px;
     line-height: 1.16;
