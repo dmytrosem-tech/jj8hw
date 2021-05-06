@@ -97,10 +97,14 @@
   line-height: 22px;
   letter-spacing: 0.02em;
   color: var(--accent-color);
+
+  @media screen and (max-width: 380px) {
+    font-size: 12px;
+  }
 }
 .menu-socials {
   display: flex;
-  flex-direction: row;
+
   &__item:not(:last-child) {
     padding-right: 10px;
     border-right: 1px solid rgba(33, 33, 33, 0.2);
